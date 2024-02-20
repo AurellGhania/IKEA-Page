@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    @apply text-secondary font-primary text-[17px] leading-8;
+}
+
+.signup-bg {
+    background-image: url(../assets/img/login/ikea_login.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.login-bg {
+    background-image: url(https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_15700878770.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.register {
+    background-image: url(https://www.ikea.com/images/a-light-living-room-centered-around-a-jaettebo-three-and-a-h-c7a5b708513cc0be58ebc3c4e94efd31.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.appointment {
+    background-image: url(https://plus.unsplash.com/premium_photo-1678752717095-08cd0bd1d7e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#F102E8, #F102E8)
+    /* linear-gradient(180deg, #418ED7 0%, #1A72C4 100%); */
+}
+
+.link-underline:hover {
+    background-size: 100% 100px;
+    background-position: 0 100%
+}
+
+.swiper-slide:nth-child(1n) {
+            background-image: url(https://www.ikea.com/images/a-light-living-room-centered-around-a-jaettebo-three-and-a-h-c7a5b708513cc0be58ebc3c4e94efd31.jpg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(2n) {
+            background-image: url(https://www.ikea.com/images/a-girl-sitting-on-a-brightly-coloured-rug-in-a-bedroom-conta-d5580495c459022927ff5e8b89f28c2a.jpg);
+            background-size: cover;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            background-image: url(https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page_thumb_10_1623131717.jpeg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(4n) {
+            background-image: url(https://www.ikea.com/images/ikea-klippan-couch-kallax-white-storage-unit-bookshelf-and-l-1890573be45522b93f7fbbe6dd49e7e3.jpg?f=sg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(5n) {
+            background-image: url(https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_15700878770.jpeg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(6n) {
+            background-image: url(https://www.ikea.com/images/dinosaur-themed-childrens-bedroom-with-wardrobe-in-white-and-44f95db66a0395d900d0636a44ce0774.jpg?f=s);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(7n) {
+            background-image: url(https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_15761220573.jpeg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(8n) {
+            background-image: url(https://www.ikea.com/images/two-children-playing-in-a-room-with-small-table-and-chairs-b-23507678bdfde32bfa8752e72772e658.jpg?f=s);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(9n) {
+            background-image: url(https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_15761220562.jpeg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(10n) {
+            background-image: url(https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page_thumb_10_1623131717.jpeg);
+            background-size: cover;
+        }
+    
+        .swiper-slide:nth-child(10n) {
+            background-image: url(https://www.ikea.com/images/a-pastel-24-hour-living-room-oasis-with-blakullen-bed-in-med-32bea9652b02cf1587955e18c9e07381.jpg?f=xxxl);
+            background-size: cover;
+        }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-primary leading-[120%];
+}
+
+.h1 {
+    @apply text-[35px] xl:text-[64px] font-semibold;
+}
+
+.h2 {
+    @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44px];
+}
+
+.h3 {
+    @apply text-[20px] xl:text-[26px] font-semibold;
+}
+.h4 {
+    @apply text-[15px] xl:text-[26px] font-semibold;
+}
+
+.btn {
+    @apply rounded-full uppercase tracking-[1.03px] flex items-center justify-center transition-all
+}
+
+.btn-sm {
+    @apply h-14 px-10;
+}
+
+.btn-lg {
+    @apply h-16 px-[50px];
+}
+
+.btn-accent {
+    @apply bg-accent text-white hover:bg-accent-secondary;
+}
+
+.btn-white {
+    @apply bg-white text-secondary hover:bg-white/90;
+}
+
+.btn-outline {
+    @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent
+    hover:border-transparent hover:text-white;
+}
+
+.input,
+.select {
+    @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf]
+    text-secondary font-light placeholder:font-light placeholder:text-secondary;
+}
+
+.input {
+    @apply px-4;
+}
+
+.section {
+    @apply py-12 xl:py-[150px];
+}
+
+/* ffaq */
+
+.faq__item.open .faq__answer{
+    @apply h-full;
+}

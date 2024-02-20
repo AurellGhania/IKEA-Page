@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikea Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/output.css">
+    <link rel="stylesheet" href="../public/input.css">
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../assets/img/header/ikea_logo.png" type="image/x-icon">
+
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class=" py-8 lg:pt-6 lg:pb-14">
+        <div class=" container mx-auto lg:relative flex flex-col lg:flex-row
+        lg:justify-between gap-y-4 lg:gap-y-0 center">
+            <!-- logo -->
+            <div class="flex justify-center lg:justify-normal">
+                <a href="">
+                    <img src="../assets/img/header/ikea_logo.png" class="h-[70px] w-auto rounded-md" alt="">
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0 mt-[1rem]">
+                <ul>
+                    <a href="../src/signup.html" target="_blank" class="  text-secondary hover:text-white hover:bg-accent transition-all duration-300 rounded-full bg-white drop-shadow-sm p-3 px-10 border-[2px] border-accent" >Sign Up</a>
+                </ul>
+                <ul>
+                    <a href="../src/login.html" target="_blank" class=" text-white hover:text-secondary hover:bg-white transition-all duration-300 rounded-full bg-accent drop-shadow-sm p-3 px-10 border-[2px] border-accent mr-[2rem]" >Sign In</a>
+                </ul>
+                <!-- btn -->
+                <button class="btn btn-sm btn-outline w-[250px] lg:w-auto mx-auto lg:mx-0 shadow-2xl lg:hidden transition-all duration-300 z-9">
+                    Book Now
+                </button>
+
+                <!-- Nav Mobile -->
+                <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+                    <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex
+                     justify-center items-center rounded-tr-lg rounded-br-lg">
+                        <i class="mnav__close-btn-icon ri-arrow-right-s-line 2xl text-white"></i>
+                    </div>
+
+                    <!-- logo, list, form -->
+                    <div class="px-12 flex flex-col gap-y-12 h-full">
+                        <!-- logo -->
+                        <a  href="">
+                            <img src="../assets/img/header/ikea_logo.png" class="h-[70px] w-auto rounded-md" alt="">
+                        </a>
+                        <!-- list -->
+                        <ul class="flex flex-col gap-y-5">
+                            <li>
+                                <a href="" class="text-secondary hover:text-accent transition-all duration-300" >Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-secondary hover:text-accent transition-all duration-300" >Kitchen</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-secondary hover:text-accent transition-all duration-300" >Living Room</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-secondary hover:text-accent transition-all duration-300" >Bed Room</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-secondary hover:text-accent transition-all duration-300" >Kids Room</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-secondary hover:text-accent transition-all duration-300" >Outdoor</a>
+                            </li>
+                        </ul>
+                        <!-- Form -->
+                        <form class="relative flex gap-x-[10px]">
+                            <label for="">
+                                <i class="ri-search-line text-2xl text-accent"></i>
+                            </label>
+                            <input type="text" id="nav-search-input"
+                            placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b2 focus:border-accent
+                            placeholder:italic">
+                        </form>
+                    </div>
+
+                </nav>
+
+                <!-- Desktop Nav -->
+                <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1
+                h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
+                    <!-- list -->
+                    <ul class="flex gap-x-4">
+                        <li>
+                            <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300" >Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300" >Kitchen</a>
+                        </li>
+                        <li>
+                            <a href="../src/detail.html" type="_blank" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300" >Living Room</a>
+                        </li>
+                        <li>
+                            <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300" >Bed Room</a>
+                        </li>
+                        <li>
+                            <a href="" class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300" >Kids Room</a>
+                        </li>
+                        <li>
+                            <a href="" class=" pr-4 text-secondary hover:text-accent transition-all duration-300" >Outdoor</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Form -->
+                    <form class="relative flex gap-x-[10px]">
+                        <label for="search-input" class="flex justify-center items-center group">
+                            <i class="ri-search-line text-2xl text-accent"></i>
+                        </label>
+                        <input type="text" id="search-input"
+                        placeholder="Search..." class="outline-none w-[160px] focus:w-[200px] border-b-2 focus:border-b2 focus:border-accent
+                        placeholder:italic placeholder:text-base transition-all duration-500">
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <section class="hero py-12 xl:pt-12 xl:pb-0 overflow-hidden ">  
+
+        
+        <div class="container mx-auto h-full">
+            <!-- text & img -->
+            <div class="flex flex-col xl:flex-row items-center justify-evenly  ">
+                <!-- text -->
+                <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                    <!-- badge -->
+                    <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0 ">
+                        <!-- badge icon -->
+                        <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+                        <div class="uppercase text-base font-medium text-[#9AB4B7] tracking-[2.24px]">
+                            Live your life
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <h1 class="h1 mb-6">We care about <br> your health</h1>
+                    <!-- desc -->
+                    <p class="mb-[20px] md:max=wid-xl">Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi</p>
+                    <p class="mb-[42px] md:max=wid-xl">Iusto officiis adipisci vero laborum provident, repellendus veniam architecto eveniet quidem, aspernatur quibusdam accusamus asperiores aperiam a quo inventore facilis quia consequuntur.</p>
+                    <!-- btn -->
+                    <button class="btn btn-lg btn-accent mx-auto xl:mx-0">Contact Us</button>
+                </div>
+                <!-- img -->
+                <div class="hero__img hidden xl:flex max-w-[841px] self-center ">
+                    <div class="w-[500px] h-[300px] mySwiper mt-11">
+                        <div class="swiper-wrapper">
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+                          <div class="flex items-center rounded-[18px] swiper-slide"></div>
+
+                        </div>
+                      </div>  
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>    
+
+    <!-- Stats -->
+    <section class="stats section">
+        <div class="container mx-auto">
+            <!-- wrapper -->
+            <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+                <!-- item 1-->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">+56980</div>
+                    <div>Inspiration</div>
+                </div>
+                <!-- item 2-->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">+26483918</div>
+                    <div>Awoesome Product</div>
+                </div>
+                <!-- item 3-->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">+76</div>
+                    <div>Desgin Interior</div>
+                </div>
+                <!-- item 4-->
+                <div class="stats__item flex-1 flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-3">+16</div>
+                    <div>Country Approved</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Stats -->
+
+    <section class="bg-accent-tertiary p-32">
+        <div class="bg-white rounded-3xl p-20">
+            <div class="flex justify-end">
+                <h1 class="h1">2 Secend in IKEA and you start planning your future.</h1>
+                <img src="../assets/img/header/ikea_logo.png" class="h-[70px] w-auto rounded-md mt-[140px] justify-end" alt="">
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- membership -->
+
+    <section class=" h-[750px] p-12 px-28 bg-white items-center overflow-hidden ">
+        <div class="flex justify-end">
+            
+            <a href="#" class="font-display text-2xl font-bold leading-tight">
+                <span class="link link-underline link-underline-black text-[150px] text-[#FFE500]"> THE ONLY MEMBERSHIP YOU NEED</span>
+            </a>
+
+            <img src="../assets/img/header/ikea_logo.png" class="h-[70px] w-auto rounded-md mt-10 justify-end" alt="">
+        </div>
+        <ul class="mt-[4rem]">
+            <a href="../src/register.html" target="_blank" class=" text-white hover:text-secondary hover:bg-white transition-all duration-300 rounded-full bg-accent drop-shadow-sm py-4 px-16 border-[2px] border-accent mr-[2rem] text-xl " >Register Now!</a>
+        </ul>  
+        
+            
+
+
+    </section>
+
+    <!-- bg -->
+    <section class="appointment  md:h-[444px] py-12 flex items-center relative overflow-hidden mt-10">
+        <div class="absolute left-0 bottom-0">
+            <img src="../assets/img/newsletter/pattern.svg" alt="">
+        </div>
+        <div class="newsletter__container container mx-auto">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:gap-x-[88px]">
+                <div class="flex-1 z-10 text-center md:text-left">
+                    <h1 class=" mb-4 text-[80px] font-bold text-white ">Chat us if you need consultation!</h1>
+                    <h1 class=" mb-4 text-[80px] font-bold text-white mt-[4rem] ">We have plenty Master Design Interior around you!</h1>
+                    <ul class="mt-[4rem]">
+                        <a href="../src/register.html" target="_blank" class=" text-white hover:text-secondary hover:bg-white transition-all duration-300 rounded-full bg-accent drop-shadow-sm py-4 px-16 border-[2px] border-accent mr-[2rem] text-xl " >Register Now!</a>
+                    </ul>  
+                </div>
+
+            
+            </div>
+            
+        </div>
+
+    </section>
+
+    
+
+    <!-- what we offer -->
+    <section class="bg-[#FFE500] pt-5 pb-20">
+        <div class="container mx-auto ">
+            <h2 class="text-7xl font-semibold text-center mt-16 mb-20">Thing's that we offer!!</h2>
+            <div class="flex items-center justify-evenly">
+                <!-- block 1 -->
+                <div class="h-[30rem] w-[23rem] relative cursor-pointer mb-5 mr-8">
+                    <div class="absolute inset-0 bg-accent-secondary rounded-3xl shadow-2xl">
+                    </div>
+                    <div class="absolute inset-0  hover:rotate-12 transition duration-300">
+                        <div class="h-full w-full bg-white rounded-3xl shadow-2xl p-16">
+                            <h1 class="h4 items-center ">Build the furniture with help of our Team !!</h1>
+                            <p class="mt-5 font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis ipsa corrupti delectus, est temporibus culpa! In a voluptates dicta consequatur sit, possimus pariatur iusto, eum quis, beatae atque.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- block 1 -->
+                <div class="h-[30rem] w-[23rem] relative cursor-pointer mb-5 mr-8">
+                    <div class="absolute inset-0 bg-accent-secondary rounded-3xl shadow-2xl">
+                    </div>
+                    <div class="absolute inset-0  hover:rotate-12 transition duration-300">
+                        <div class="h-full w-full bg-white rounded-3xl shadow-2xl p-16">
+                            <h1 class="h4 items-center ">Consultant with the interior Design !!</h1>
+                            <p class="mt-5 font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis ipsa corrupti delectus, est temporibus culpa! In a voluptates dicta consequatur sit, possimus pariatur iusto, eum quis, beatae atque.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- block 1 -->
+                <div class="h-[30rem] w-[23rem] relative cursor-pointer mb-5 mr-8">
+                    <div class="absolute inset-0 bg-accent-secondary rounded-3xl shadow-2xl">
+                    </div>
+                    <div class="absolute inset-0  hover:rotate-12 transition duration-300">
+                        <div class="h-full w-full bg-white rounded-3xl shadow-2xl p-16">
+                            <h1 class="h4 items-center ">Express Delivery by our team !!</h1>
+                            <p class="mt-5 font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis ipsa corrupti delectus, est temporibus culpa! In a voluptates dicta consequatur sit, possimus pariatur iusto, eum quis, beatae atque.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- galery -->
+
+    <section class="flex p-16 min-h-fit">
+
+        <label class="mr-[2rem] z-10">
+          <input class="peer/showLabel relative scale-0" type="checkbox" />
+          <span class="block max-h-16 max-w-[15rem] overflow-hidden rounded-xl bg-white px-4 py-0 text-cyan-800 drop-shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-full peer-checked/showLabel:max-w-full peer-checked/showLabel:-translate-y-20 peer-checked/showLabel:absolute peer-checked/showLabel:z-0">
+            <h3 class="flex h-16 cursor-pointer items-center font-bold text-slate-700 ">Expand & Collapse Me</h3>
+            <div class="border-b-[3px] -mt-3 border-sky-600"></div>
+            <div class="mb-2 py-12 px-14">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </span>
+        </label>
+
+        <label class="z-10">
+          <input class="peer/showLabel relative scale-0" type="checkbox" />
+          <span class="block max-h-16 max-w-[15rem] overflow-hidden rounded-xl bg-white px-4 py-0 text-cyan-800 drop-shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-full peer-checked/showLabel:max-w-full peer-checked/showLabel:-translate-y-20 peer-checked/showLabel:absolute peer-checked/showLabel:z-0">
+            <h3 class="flex h-16 cursor-pointer items-center font-bold text-slate-700 ">Expand & Collapse Me</h3>
+            <div class="border-b-[3px] -mt-3 border-sky-600"></div>
+            <div class="mb-2 py-12 px-14">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4">
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </span>
+        </label>
+      </section>
+    <!-- end galery -->
+
+      
+
+
+
+    <!-- branch -->
+    <section class="brands section">
+        <div class="container mx-auto">
+            <div class="flex flex-col xl:flex-row gap-y-12 xl:gap-y-0 justify-between items-center">
+                <img src="../assets/img/brands/brand-3.svg" alt="">
+                <img src="../assets/img/brands/brand-2.svg" alt="">
+                <img src="../assets/img/brands/brand-1.svg" alt="">
+                <img src="../assets/img/brands/brand-4.svg" alt="">
+                <img src="../assets/img/brands/brand-5.svg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- end branch -->
+
+
+
+    <!-- footer -->
+    <footer class="p-[100px] bg-white" id="footer">
+        <div class="flex justify-between gap-[50px]">
+            <div class="address">
+                <img class="logo mb-[21px] h-[70px] w-auto rounded-md" src="../assets/img/header/ikea_logo.png"  alt="" >
+                <p class="text-[#5C6574] text-[16px] w-[408px] h-[90px]">Super cool designs. Heavy-hitting hydration. Treat the Marvel super-fan in your life to this limited-edition collection, featuring multi-dimensional designs based on your favorite Marvel characters. 
+                  <br><br>
+
+              
+            </div>
+            <div class="flex flex-col">
+                <p class="text-[#3a434d] font-[20px] uppercase" style="  letter-spacing: 3px;">Navigation</p>
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-[#3a434d] font-[20px] uppercase" style="  letter-spacing: 3px;">Variant</p>
+                <a href="#">Tumbler</a>
+                <a href="#">Adult</a>
+                <a href="#">Kids</a>
+                <a href="#">Doctor</a>
+            </div>
+
+            <div>
+                <p class="text-[#3a434d] font-[20px] uppercase">Follow Us</p>
+                <i class="ri-twitter-x-fill text-2xl"></i>
+                <i class="ri-linkedin-box-fill text-2xl"></i>
+                <i class="ri-instagram-fill text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="mt-32 flex justify-between">
+            <div class="copyright">
+                <p class="text-[16px]">&copy; 2022 Corkcicle. All Right Reserved. Designed by Aurell</p>
+            </div>
+
+            <div class="flex gap-[30px]">
+                <p>Terms of Service | Privacy Policy</p>
+            </div>
+
+        </div>
+      </footer>
+    <!-- end footer -->
+      
+
+    
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT -->
+    <!-- swiper -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- main -->
+    <script src="main.js"></script>
+    <!-- scroll reveral -->
+    <script src="scrollreveal.min.js"></script>
+</body>
+</html>
